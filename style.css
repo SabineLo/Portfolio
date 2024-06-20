@@ -1,0 +1,97 @@
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color:#FCF9F0 ;
+    margin:0px;
+}
+
+main{
+    margin-left:20px;
+    margin-right:20px;
+}
+
+h1{
+    text-align: center;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color:#949D6A;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: #EBE9E2;
+    text-decoration: none;
+    padding:15px;
+    display:block;
+    text-align: center;
+    font-size: 25px;
+    margin-right: 35px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logo a{
+    font-size: 35px; font-weight: 600; color: #EBE9E2;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 25px;
+}
+
+.navbar li{
+    float: right;
+    display:inline-block;
+
+}
+
+.navbar li a:hover{
+    color:#F6CA83;
+    transition:all 0.4s ease 0s;
+}
+
+.navdiv{
+    display:flex; align-items:center; justify-content: space-between;
+    background-color: #949D6A;
+}
+
+#about{
+    background-color: #F6CA83; 
+}
+#about h1{
+    color:#FCF9F0;
+    font-size:30px;
+    margin-top: 400px;
+    padding-top:15px;
+    padding-bottom:12px;
+}
+
+#about p{
+    margin-left: 25px;
+    padding-bottom: 10px;
+}
+
+
+#Portfolio{
+    background-color: #949D6A;
+}
+
+#Portfolio h1{
+    padding-top: 15px;
+    margin-top: 200px;
+    font-size: 30px;
+    padding-bottom:12px ;
+}
+
+
+
+@media screen and (max-width: 400px) {
+   
+}
+
+/*Iphone one I think and its the smallest it will get when I stretch my website */
+@media screen and (max-width: 600px) {
+    
+}
