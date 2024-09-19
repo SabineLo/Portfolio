@@ -5,34 +5,221 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--This means to use the best/latest version of Internet Explorer-->
         <meta name = "viewport" content="width=device-width,initial-scale=1.0"> <!--Makes sure that in different devices the webpage is displayer properly and scaled-->
         <title> Portfolio </title>
+
+        <!--CSS font show-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <!--CSS link-->
         <link rel="stylesheet" href ="style.css">
-        
+          <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script type="text/javascript" src="spanishmode.js"></script>
    
     </head>
     <body>
-        <nav class = "navbar">
-            <div class = "navdiv">
-            <div class="logo"><a>Sabine Loaiza Chable</a></div>
-            <ul>
-                <li><a href = "#Portfolio">Portfolio</a></li>
-                <li><a href = "#about">About</a></li>
-                <li><a href = "index.html ">Home</a></li>
-            </ul>    
+        <header>
+            <!--maybe can make my own logo and put it there-->
+            <div class="header-container">
+            <a href="#" class="logo">Sabine's Portfolio</a>
+            <nav class="navbar">
+                <!--can change it to the different webpages-->
+                <a href="#home" class="active">Home</a>
+                <a href="#dishes" >About</a>
+                <a href="#about" >Portfolio</a>
+            </nav>
+    
+            <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fa fa-globe" aria-hidden="true"></i>
             </div>
-        </nav>
-
-        <main>
-            <h3>This is the Home page</h3>
-            <p> yipee </p>
-        </main>
-
-        <div id = "about"> 
-           <h1> About </h1>  
-           <p> I am a student in University of California, Im interested in cybersecurity, and game devoplment </p>
         </div>
+        </header>
 
-        <div id = "Portfolio">
-            <h1> Portfolio </h1>
-        </div>
+        <!--Section: Main with photo-->
+        <section class="home" id="home">
+            <div class="content">
+                <h3>Hello, I am</h3>
+                <h1>Sabine Loaiza Chable</h1>
+                <p>I'm a computer science student with a passion for
+                    software engineering, web, and game development
+                </p>
+            </div>
+            <div class="image">
+                <img class="me" src="me.png" alt="Sabine">
+            </div>
+        </section>
+
+        <!--About section-->
+        <!--Contents I'm a Computer Science student with a passion for software engineering, web development, 
+    and game development. I am dedicated to exploring new technologies and creating innovative solutions 
+    to real-world problems. My goal is to contribute to meaningful projects and continue learning 
+    in the ever-evolving field of technology.<h2>Education</h2>
+                    <h4>University of California San Diego</h4>
+                    <p>Major: Computer Science</p>
+                    <p>Club: Women In Computing(member)</p>
+                    <p>Second year student interested in web,game development, cybersecurtiy and software</p>
+                    <p>engineering. I am dedicated to exploring new technologies and creating innovative solutions</p> 
+                    <p>to real-world problems. My goal is to contribute to meaningful projects</p>
+                    <p> and continue learning in the ever-evolving field of technology.</p>-->
+        <section class="About" id="dishes">
+            <h1>About</h1>
+            <hr>
+            <div class="content">
+            <div class="box-container">
+                    <div class="box">
+                    <div class="card-header firstA">Education</div> 
+                          <h5 class="card-title">University of California San Diego</h5>
+                          <p>Club: Women In Computing(member)</p>
+                          <p> I am dedicated to exploring new technologies and creating innovative solutions</p> 
+                          <p>to real-world problems. My goal is to contribute to meaningful projects</p>
+                          <p> and continue learning in the ever-evolving field of technology.</p>
+                        </div>
+                    <div class="col-sm-4">
+                      <div class="card">
+                      <div class="card-header firstB">Interests</div> 
+                        <div class="card-body">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                        <div class="card-header firstC">Socials</div> 
+                          <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                           
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          
+        </section>
+
+        <!--Section show off projects-->
+        <section class="Projects">
+           <div class="content">
+                <h1>Projects</h1>
+                <hr>
+                <div class="card-columns">
+
+                    <div class="card card1 mb-4">
+                      <div class="card-header border-success firstcard">Food Review</div>  
+                      <img class="card-img-top" src="food2.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Food Review: Website that rates dining hall food</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                    </div>
+
+                    <div class="card text-center mb-4">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    
+                      <div class="card text-black text-center p-3 mb-4">
+                        <blockquote class="blockquote mb-0">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+                          <footer class="blockquote-footer">
+                            <small>
+                              Someone famous in <cite title="Source Title">Source Title</cite>
+                            </small>
+                          </footer>
+                        </blockquote>
+                      </div>
+
+                     <!-- <div class="card p-2 mb-4">
+                        <img class="card-img" src="decoration1.png" alt="Card image">
+                       </div>
+                      Left side ^^-->
+
+                    <!--Middle-->
+                    <div class="card card2 mb-4">
+                        <div class="card-header border-success">HandShake Webscraper</div>  
+                        <img class="card-img-top" src="webscraper.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Job Application Tracker and Analysis </h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+
+                    <div class="card p-3 mb-4">
+                      <blockquote class="blockquote mb-0 card-body">
+                        <p>Every now and then I do something little me would've loved</p>
+                        <footer class="blockquote-footer">
+                          <small class="text-white">
+                           Found <cite title="Source Title">Online</cite>
+                          </small>
+                        </footer>
+                      </blockquote>
+                    </div>
+
+                    <!--top right-->
+                    <div class="card card3 mb-4">
+                      <div class="card-header border-success secondcard">Header</div>
+                      <img class="card-img-top" src="webscraper.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+
+                    <!--This is the nlue button-->
+                   
+                    <!--Middle column ^^
+                    
+                
+
+                   <div class="card p-2 mb-4">
+                    <img class="card-img" src="decoration1.png" alt="Card image">
+                   </div>
+                  -->
+                    <!--Here it is the right side of blue button-->
+                    <div class="card p-4 text-right mb-4">
+                      <blockquote class="blockquote mb-0">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <footer class="blockquote-footer">
+                          <small class="text-muted">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                          </small>
+                        </footer>
+                      </blockquote>
+                    </div>
+
+                    <div class="card card4 mb-4">
+                        <div class="card-header border-success fourthcard">Food Review</div>  
+                        <img class="card-img-top" src="food2.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Food Review: Website that rates dining hall food</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    
+
+                    <div class="card mb-4">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    
+                  </div>
+
+
+           </div>
+
+        </section>
+        <!--Footer Section-->
+        <section class="footer">
+
+        </section>
     </body>
 </html>

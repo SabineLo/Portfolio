@@ -1,97 +1,485 @@
+
+
+/*Change the colors*/
+:root{
+    --green:#949D6A;
+    --yellow:#F6CA83;
+    --black:#2B1600;
+    --light-color:#666;
+    --white:#EBE9E2;
+    --light-white:#FCF9F0;
+    --orange:#2fa3e1;
+    --box-shadow:0 .5rem 1.5rem rgba(0, 0, 0, 0.317);
+}
+
 *{
     text-decoration: none;
     box-sizing: border-box;
-}
-body{
-    background-color:#FCF9F0 ;
-    margin:0px;
-}
-
-main{
-    margin-left:20px;
-    margin-right:20px;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
 }
 
-h1{
+html{
+    font-size:62.5%;
+    overflow-x:hidden;
+    scroll-padding-top:5.5rem ;
+    scroll-behavior: smooth;
+    background: #FCF9F0;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+section:nth-child(even){
+    background: #FCF9F0;
+}
+
+section:nth-child(odd){
+    background: #F6CA83;
+}
+
+header{
+    position:fixed;
+    top:0; left: 0; right:0;
+    /*change the color of nav bar*/
+    background: #949D6A;
+    padding:1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:1000;
+    box-shadow: var(--box-shadow);
+}
+
+.header-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content:space-between; /* Space items out */
+    padding:1rem; /* Adjust as needed */
+}
+
+header .logo{
+    /*the color of Sabine Portfolio + size change to color scheme later*/
+    color:#F2E3BC;
+    font-size:2.5rem;
+    font-weight: bolder;
+    margin-left: -2cm;
+    margin-bottom: .5rem;
+}
+
+/*twee type vibe*/
+
+
+.header-container .navbar{
+    display: flex;
+    gap: 1rem;
+    /*make it be in the middle*/
+    margin-left: -4.5cm;
+}
+
+.header-container .navbar a{
+    /*this changes the size of the hot bar menu lolool and color*/
+    font-size:1.9rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    font-weight: bolder;
+    color:#F2E3BC;
+    margin-bottom: .5rem;
+}
+
+
+/* Icons styling */
+.header-container .icons {
+    display: flex;
+    gap: 1rem; /* Adjust spacing between icons */
+    align-items: center;
+}
+
+
+.header-container .icons i {
+    font-size: 1.8rem; /* Adjust size as needed */
+    color: #ffffff; /* Adjust color if needed */
+}
+
+header .navbar a:hover{
+    color:#ffffff;
+    background:#96BBBB;
+}
+
+header .icons i,
+header .icons a{
+    /*change the curosor if prefered*/
+    cursor:pointer;
+}
+
+
+/*Section Home*/
+.home .content h3{
+    margin-top: 4.5cm;
+    text-align:center;
+    font-size: 22px;
+    margin-bottom: 1rem;
+    color:#9CB380;
+    margin-left: -4.5cm;
+}
+
+.home .content h1{
+    text-align: center;
+    margin-bottom: 3cm;
+    font-size: 52px;
+    color:#6B6054;
+    margin-left: -4cm;
+}
+
+.home .content p{
+    text-align: center;
+    margin-top: -2.5cm;
+    margin-bottom: 3cm;
+    font-size: 12px;
+    color:#9CAFB7;
+    font-weight: bold;
+    margin-left: -4cm;
+}
+
+
+
+.home {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center items within the section */
+    justify-content: space-between; /* Space out content and image */
+}
+
+/* Style for the content section */
+.home .content {
+    flex: 1; /* Allows the content to take available space */
+    text-align: center; /* Center-aligns text content */
+    margin-bottom: -1cm;
+}
+
+.home .image {
+    display: flex; /* Allows for proper alignment of the image */
+    justify-content: flex-end; /* Aligns the image to the right */
+    align-items: center; /* Centers the image vertically within the container */
+}
+
+/* Style for the circular image */
+.home .image img {
+    margin-top: 4cm;
+    width: 325px; /* Adjust size as needed */
+    height: 325px; /* Ensure width and height are equal for a perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures image covers the circular area */
+    display: block; /* Avoids extra space below the image */
+    margin-left: -3.5cm;
+    margin-right: 1cm;
+    margin-bottom: 2cm;
+}
+
+/*Section Home END*/
+
+/*About section*/
+
+.About h1{
+    color:#ffffff;
     text-align: center;
 }
-.navbar ul{
-    list-style-type: none;
-    background-color:#949D6A;
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
+
+.About hr{
+    margin-bottom: 2cm;
 }
 
-.navbar a{
-    color: #EBE9E2;
-    text-decoration: none;
-    padding:15px;
-    display:block;
+
+.About .content h2{
+    color: #A44A3F;
+    text-decoration: underline;
+
+}
+
+.About .content .card-header.firstA{
+    background-color: #949D6A;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.About p{
+    font-size:14px;
+}
+
+
+.About .content .card-header.firstB{
+    background-color: #EDB72C;
+    font-weight: bold;
+}
+
+.About .content .card-header.firstC{
+    background-color: #9CAFB7;
+    font-weight: bold;
+}
+
+.About .card{
+    margin-bottom: 3cm;
+    box-shadow: var(--box-shadow);
+}
+
+
+/*About section END F0CF65*/
+
+/*Project Section*/
+.Projects .content h1{
     text-align: center;
-    font-size: 25px;
-    margin-right: 35px;
-    font-weight: 600;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.logo a{
-    font-size: 35px; font-weight: 600; color: #EBE9E2;
-    font-family: 'Courier New', Courier, monospace;
-    margin-left: 25px;
-}
-
-.navbar li{
-    float: right;
-    display:inline-block;
-
-}
-
-.navbar li a:hover{
-    color:#F6CA83;
-    transition:all 0.4s ease 0s;
-}
-
-.navdiv{
-    display:flex; align-items:center; justify-content: space-between;
-    background-color: #949D6A;
-}
-
-#about{
-    background-color: #F6CA83; 
-}
-#about h1{
-    color:#FCF9F0;
-    font-size:30px;
-    margin-top: 400px;
-    padding-top:15px;
-    padding-bottom:12px;
-}
-
-#about p{
-    margin-left: 25px;
-    padding-bottom: 10px;
-}
-
-
-#Portfolio{
-    background-color: #949D6A;
-}
-
-#Portfolio h1{
-    padding-top: 15px;
-    margin-top: 200px;
-    font-size: 30px;
-    padding-bottom:12px ;
-}
-
-
-
-@media screen and (max-width: 400px) {
-   
-}
-
-/*Iphone one I think and its the smallest it will get when I stretch my website */
-@media screen and (max-width: 600px) {
+    color: #F0CF65;
     
 }
+
+.Projects hr{
+    margin-bottom: 1cm;
+}
+
+/*Changes font color*/
+.Projects .content .card{
+    color: #2B1600;
+}
+
+
+.Projects .content .card.card1{
+    width: 100%;
+    height: 115%;
+    background-color: #EDB72C;
+    color: #ffffff;
+
+}
+
+.Projects .content .card.card2{
+    width: 100%;
+    height: 115%;
+    background-color: #9CB380;
+    color: #ffffff;
+  
+}
+
+.Projects .content .card.card3{
+    width: 100%;
+    height: 115%;
+    background-color: #9CAFB7;
+    color: #ffffff;
+  
+}
+
+.Projects .content .card.card4{
+    width: 100%;
+    height: 115%;
+    background-color: #C7AC92;
+    color: #ffffff;
+  
+}
+
+/*The one to the right of main blue button in center*/
+.Projects .content .card.p-3.text-right{
+    background-color: #ffff;
+    
+}
+
+.Projects .card.p-3.mb-4{
+    background-color: #A44A3F;
+    color: #ffff;
+}
+
+.Projects .content .card.text-black.text-center.p-3{
+    background-color: #ffff;
+
+  
+}
+
+
+
+/*Bottom left project*/
+
+
+.Projects .content .card-header.border-success{
+    background-color:#9CB380;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.Projects .content .card-header.border-success.firstcard{
+    background-color: #EDB72C;
+    color: #ffff;
+    font-size: 13px;
+}
+
+.Projects .content .card-header.border-success.secondcard{
+    background-color:#9CAFB7 ;
+    font-size: 13px;
+}
+
+.Projects .content .card-header.border-success.fourthcard{
+    background-color:#C7AC92 ;
+    font-size: 13px;
+}
+/*Project END*/
+
+/*makes sure it is not displayed */
+header .icons #menu-bars{
+    display:none;
+}
+
+
+
+
+
+
+@media(max-width:991px){
+    html{
+        font-size:55%;
+    }
+
+    header{
+        padding:1rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+    /*Nav bar*/
+    header .logo{
+        /*the color of Sabine Portfolio + size change to color scheme later*/
+        font-size:2rem;
+        font-weight: bolder;
+        margin-left: .1rem;
+    }
+    
+    
+    .header-container .navbar{
+        display: flex;
+        gap: 1rem;
+        /*make it be in the middle*/
+        margin-right: -30rem;
+    }
+    
+    .header-container .navbar a{
+        /*this changes the size of the hot bar menu lolool and color*/
+        font-size:1.5rem;
+        font-weight: bolder;
+        margin-bottom: .5rem;
+    }
+    
+
+    /*Home main*/
+    .home .content h3{
+        margin-top: 4cm;
+        text-align:left;
+        font-size: 16px;
+        margin-bottom: 1rem;
+        margin-left: .1rem;
+    }
+    
+    .home .content h1{
+        text-align: left;
+        margin-bottom: 3cm;
+        font-size: 24px;
+        margin-left: .1rem;
+    }
+    
+    .home .content p{
+        text-align: left;
+        margin-top: -2.5cm;
+        margin-bottom: 3cm;
+        font-size: 10px;
+        font-weight: bold;
+        margin-left: .1rem;
+    }
+    
+    
+    .home {
+        display: flex; /* Use flexbox for layout */
+        align-items: center; /* Vertically center items within the section */
+        justify-content: space-between; /* Space out content and image */
+    }
+    
+    /* Style for the content section */
+    .home .content {
+        flex: 1; /* Allows the content to take available space */
+        text-align: center; /* Center-aligns text content */
+        margin-bottom: -1cm;
+    }
+    
+    .home .image {
+        display: flex; /* Allows for proper alignment of the image */
+        justify-content: flex-end; /* Aligns the image to the right */
+        align-items: center; /* Centers the image vertically within the container */
+    }
+    
+    /* Style for the circular image */
+    .home .image img {
+        margin-top: 3cm;
+        width: 180px; /* Adjust size as needed */
+        height: 180px; /* Ensure width and height are equal for a perfect circle */
+        border-radius: 50%; /* Makes the image circular */
+        object-fit: cover; /* Ensures image covers the circular area */
+        display: block; /* Avoids extra space below the image */
+        margin-left: 1cm;
+       margin-right: .1rem;
+        margin-bottom: 1cm;
+    }
+
+    .card{
+        width: 65%;
+        margin-left: 2.2cm;
+    }
+
+    /*About section*/
+    .About .content h1 {
+        text-decoration: underline;
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .About .content .card {
+        display: flex;  /* This will make the card's contents flex */
+        width: 70%;    /* Sets the width of the card */ /* Centers the card horizontally */
+        height: auto;   /* Allows the card to adjust height based on content */  /* Adds some padding inside the card */
+       
+      
+    }
+
+
+    /*Projects*/
+    .Projects .content h1{
+        text-align: center;
+        text-decoration: underline;
+        margin-bottom: 3rem;
+        font-size: 16px;
+    }
+
+    .Projects .content .card.card1{
+        width: 65%;
+       
+        
+    
+    }
+    
+    .Projects .content .card.card2{
+        width: 65%;
+       
+      
+    }
+    
+    .Projects .content .card.card3{
+        width: 65%;
+        
+        
+      
+    }
+    
+    .Projects .content .card.card4{
+        width: 65%;
+        
+       
+    }
+    
+}
+
+
