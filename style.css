@@ -38,6 +38,7 @@ section:nth-child(even){
 
 section:nth-child(odd){
     background: #F6CA83;
+    
 }
 
 header{
@@ -200,7 +201,7 @@ header .icons a{
 .About .content .card-header.firstA{
     background-color: #949D6A;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 8px;
 }
 
 .About p{
@@ -211,11 +212,13 @@ header .icons a{
 .About .content .card-header.firstB{
     background-color: #EDB72C;
     font-weight: bold;
+    font-size: 14px;
 }
 
 .About .content .card-header.firstC{
     background-color: #9CAFB7;
     font-weight: bold;
+    font-size: 14px;
 }
 
 .About .card{
@@ -223,6 +226,26 @@ header .icons a{
     box-shadow: var(--box-shadow);
 }
 
+
+.About li{
+    font-size: 14px;
+    
+}
+
+.fa.fa-graduation-cap {
+    font-size: large;
+    margin-right: 1px;
+}
+
+far.fa-heart{
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.fab.fa-linkedin{
+    font-size: 20px;
+    margin-right: 5px;
+}
 
 /*About section END F0CF65*/
 
@@ -248,6 +271,7 @@ header .icons a{
     height: 115%;
     background-color: #EDB72C;
     color: #ffffff;
+    font-weight: bold;
 
 }
 
@@ -256,7 +280,7 @@ header .icons a{
     height: 115%;
     background-color: #9CB380;
     color: #ffffff;
-  
+    font-weight: bold;
 }
 
 .Projects .content .card.card3{
@@ -264,7 +288,7 @@ header .icons a{
     height: 115%;
     background-color: #9CAFB7;
     color: #ffffff;
-  
+    font-weight: bold;
 }
 
 .Projects .content .card.card4{
@@ -278,12 +302,12 @@ header .icons a{
 /*The one to the right of main blue button in center*/
 .Projects .content .card.p-3.text-right{
     background-color: #ffff;
-    
+    color: #2B1600;
 }
 
 .Projects .card.p-3.mb-4{
-    background-color: #A44A3F;
-    color: #ffff;
+    background-color: #fff;
+    color: #2B1600;
 }
 
 .Projects .content .card.text-black.text-center.p-3{
