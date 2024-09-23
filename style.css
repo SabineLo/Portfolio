@@ -18,6 +18,7 @@
     outline: none; border: none;
     text-transform: capitalize;
     transition: all .2s linear;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 html{
@@ -26,6 +27,7 @@ html{
     scroll-padding-top:5.5rem ;
     scroll-behavior: smooth;
     background: #FCF9F0;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 section{
@@ -120,7 +122,7 @@ header .icons a{
 .home .content h3{
     margin-top: 4.5cm;
     text-align:center;
-    font-size: 22px;
+    font-size: 24px;
     margin-bottom: 1rem;
     color:#9CB380;
     margin-left: -4.5cm;
@@ -129,7 +131,7 @@ header .icons a{
 .home .content h1{
     text-align: center;
     margin-bottom: 3cm;
-    font-size: 52px;
+    font-size: 58px;
     color:#6B6054;
     margin-left: -4cm;
 }
@@ -138,7 +140,7 @@ header .icons a{
     text-align: center;
     margin-top: -2.5cm;
     margin-bottom: 3cm;
-    font-size: 12px;
+    font-size: 16px;
     color:#9CAFB7;
     font-weight: bold;
     margin-left: -4cm;
@@ -182,55 +184,24 @@ header .icons a{
 
 /*About section*/
 
-.About h1{
+.About h3{
     color:#ffffff;
     text-align: center;
-}
-
-.About hr{
-    margin-bottom: 2cm;
-}
-
-
-.About .content h2{
-    color: #A44A3F;
-    text-decoration: underline;
-
-}
-
-.About .content .card-header.firstA{
-    background-color: #949D6A;
+    font-size: 3.2rem;
     font-weight: bold;
-    font-size: 8px;
 }
+
+
+.About .content{
+    margin-top: 1cm;
+}
+
 
 .About p{
     font-size:14px;
 }
 
 
-.About .content .card-header.firstB{
-    background-color: #EDB72C;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.About .content .card-header.firstC{
-    background-color: #9CAFB7;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.About .card{
-    margin-bottom: 3cm;
-    box-shadow: var(--box-shadow);
-}
-
-
-.About li{
-    font-size: 14px;
-    
-}
 
 .fa.fa-graduation-cap {
     font-size: large;
@@ -247,12 +218,74 @@ far.fa-heart{
     margin-right: 5px;
 }
 
+.About2 {
+    display: flex;
+    flex-direction: column; /* Stack the groups vertically */
+    align-items: flex-end; /* Align groups to the right */
+    width: 100%;
+  }
+
+.About .header6{
+    text-decoration:underline;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 2.3rem;
+    margin-bottom: 12px;
+}
+
+.About .header7{
+    text-align: center;
+    margin-left: 20cm;
+    margin-top: -8.65cm;
+    text-decoration:underline;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 2.3rem;
+    margin-bottom: 12px;
+  }
+  
+
+.skills-group1 {
+    margin-right: 1.5cm;
+    margin-top: 1rem;
+    display: flex; /* Use flex for each group */
+    justify-content: flex-end; /* Align items to the right */
+  }
+
+.skills-group2 {
+    margin-right: 1cm;
+    margin-top: 1rem;
+    margin-bottom: 4cm;
+    display: flex; /* Use flex for each group */
+    justify-content: flex-end; /* Align items to the right */
+  }
+  
+  
+.skills {
+    width: 35%; /* Width for each skill */
+    margin: 5px; /* Add spacing */
+  }
+
+.About .skills{
+    padding: 1rem 2rem;
+    margin-bottom: 2.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.6rem;
+    
+    background: rgb(247, 212, 136);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #A44A3F;
+}
+
 /*About section END F0CF65*/
 
 /*Project Section*/
-.Projects .content h1{
+.Projects .content h3{
     text-align: center;
     color: #F0CF65;
+    font-size: 3.2rem;
+    font-weight: bold;
     
 }
 
@@ -276,7 +309,7 @@ far.fa-heart{
 }
 
 .Projects .content .card.card2{
-    width: 100%;
+    width: 101%;
     height: 115%;
     background-color: #9CB380;
     color: #ffffff;
@@ -284,7 +317,7 @@ far.fa-heart{
 }
 
 .Projects .content .card.card3{
-    width: 100%;
+    width: 101%;
     height: 115%;
     background-color: #9CAFB7;
     color: #ffffff;
@@ -292,7 +325,7 @@ far.fa-heart{
 }
 
 .Projects .content .card.card4{
-    width: 100%;
+    width: 101%;
     height: 115%;
     background-color: #C7AC92;
     color: #ffffff;
@@ -348,6 +381,41 @@ far.fa-heart{
 header .icons #menu-bars{
     display:none;
 }
+
+/*Footer*/
+.footer .box-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap:1.5rem;
+
+}
+.footer .box-container .box h3{
+    padding:.5rem 0;
+    font-size: 2.5rem;
+    color:#A44A3F;
+}
+
+/*how to change the font*/
+.footer .box-container .box a{
+    font-family: "Pixelify Sans", sans-serif;
+    padding:.5rem 0;
+    font-size: 2.5rem;
+    color:#EBE9E2;
+}
+
+.footer .box-container .box a{
+    font-family: "Pixelify Sans", sans-serif;
+    display: block;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color:#fff;
+}
+
+.footer .box-container .box a:hover{
+    color:#A44A3F;
+    text-decoration:underline;
+}   
+
 
 
 
@@ -455,18 +523,53 @@ header .icons #menu-bars{
     }
 
     /*About section*/
-    .About .content h1 {
-        text-decoration: underline;
-        text-align: center;
-        font-size: 16px;
+    .About .header6{
+        font-size: 1.5rem;
+        margin-bottom: 12px;
     }
     
-    .About .content .card {
-        display: flex;  /* This will make the card's contents flex */
-        width: 70%;    /* Sets the width of the card */ /* Centers the card horizontally */
-        height: auto;   /* Allows the card to adjust height based on content */  /* Adds some padding inside the card */
-       
+    .About .header7{
+        text-align: center;
+        margin-left: .2cm;
+        margin-right: 16cm;
+        margin-top: .65cm;
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+      }
+
+      .About p{
+        font-size:12px;
+    }
+     
+    .skills-group1 {
+        margin-right: 4.5cm;
+        margin-top: 1rem;
+        display: flex; /* Use flex for each group */
+        justify-content: flex-end; /* Align items to the right */
+      }
+    
+    .skills-group2 {
+        margin-right: 4cm;
+        margin-top: 1rem;
+        margin-bottom: 2cm;
+        display: flex; /* Use flex for each group */
+        justify-content: flex-end; /* Align items to the right */
+      }
       
+      
+    .skills {
+        width: 35%; /* Width for each skill */
+        margin: 5px; /* Add spacing */
+      }
+    
+    .About .skills{
+        padding: 1rem 2rem;
+        margin-bottom: 2.5rem;
+        margin-right: 1rem;
+        font-size: 1.5rem;
+        border-radius: 5px;
+        font-weight: 400;
+        
     }
 
 
