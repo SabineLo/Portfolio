@@ -288,6 +288,7 @@ header .icons a{
     
 }
 
+
 .Projects hr{
     margin-bottom: 1cm;
 }
@@ -297,22 +298,31 @@ header .icons a{
     color: #2B1600;
 }
 
+/*Size of the subtitle basicly*/
+.Projects .content .card-title{
+    font-size:15px;
+    font-weight: bold;
+}
+
+/*The actual projects*/
+
 
 .Projects .content .card.card1{
     width: 100%;
     height: 115%;
     background-color: #EDB72C;
     color: #ffffff;
-    font-weight: bold;
+    font-size: 12px;
 
 }
+
 
 .Projects .content .card.card2{
     width: 101%;
     height: 115%;
     background-color: #9CB380;
     color: #ffffff;
-    font-weight: bold;
+    font-size: 12px;
 }
 
 .Projects .content .card.card3{
@@ -320,7 +330,7 @@ header .icons a{
     height: 115%;
     background-color: #9CAFB7;
     color: #ffffff;
-    font-weight: bold;
+    font-size: 12px;
 }
 
 .Projects .content .card.card4{
@@ -328,10 +338,13 @@ header .icons a{
     height: 115%;
     background-color: #C7AC92;
     color: #ffffff;
-  
+    font-size: 12px;
 }
 
+/*Actual projects end*/
+
 /*The one to the right of main blue button in center*/
+/*Add some qoutes but idk what */
 .Projects .content .card.p-3.text-right{
     background-color: #ffff;
     color: #2B1600;
@@ -345,34 +358,29 @@ header .icons a{
 .Projects .content .card.text-black.text-center.p-3{
     background-color: #ffff;
 
-  
 }
 
-
-
-/*Bottom left project*/
-
-
+/*Project headers*/
 .Projects .content .card-header.border-success{
     background-color:#9CB380;
     color: #ffffff;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .Projects .content .card-header.border-success.firstcard{
     background-color: #EDB72C;
     color: #ffff;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .Projects .content .card-header.border-success.secondcard{
     background-color:#9CAFB7 ;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .Projects .content .card-header.border-success.fourthcard{
     background-color:#C7AC92 ;
-    font-size: 13px;
+    font-size: 16px;
 }
 /*Project END*/
 
@@ -470,7 +478,7 @@ header .icons #menu-bars{
     .home .content h1{
         text-align: left;
         margin-bottom: 3cm;
-        font-size: 28px;
+        font-size: 30px;
         margin-left: .1rem;
     }
     
@@ -503,17 +511,28 @@ header .icons #menu-bars{
         align-items: center; /* Centers the image vertically within the container */
     }
     
+    .profile{
+        height: 450px;
+    }
+
     /* Style for the circular image */
     .home .image img {
-        margin-top: 3cm;
-        width: 195px; /* Adjust size as needed */
-        height: 195px; /* Ensure width and height are equal for a perfect circle */
+        margin-top: 3.5cm;
+        width: 220px; /* Adjust size as needed */
+        height: 220px; /* Ensure width and height are equal for a perfect circle */
         border-radius: 50%; 
         object-fit: cover; 
         display: block; /* Avoids extra space below the image */
         margin-left: 1cm;
-       margin-right: .1rem;
-        margin-bottom: 1cm;
+        margin-right: .1rem;
+        margin-bottom: .5cm;
+    }
+
+    .fab.fa-linkedin{
+        font-size: 20px;
+        margin-left: 3cm;
+        color: #9CAFB7;
+        
     }
 
     .card{
